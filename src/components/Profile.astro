@@ -1,0 +1,76 @@
+<section>
+    <div class="info">
+        <h1>Hola mi nombre es Ricardo Hernandez Ign. En Sistemas</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            dolorum tenetur quia ad optio, porro qui labore magni facilis
+            quaerat repudiandae, quasi exercitationem mollitia veritatis
+            architecto totam nisi animi nihil.
+        </p>
+        <div class="links">
+            <a href="https://github.com/ricardo-fdz"
+                >GitHub <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ricardo-hernandez-dev/"
+                >LinkedIn <i class="fa-solid fa-up-right-from-square"></i></a
+            >
+            <a href="mailto:hfdz.ricardo@gmail.com"
+                >Correo <i class="fa-solid fa-up-right-from-square"></i></a
+            >
+            <a href="">Curriculum <i class="fa-solid fa-file-arrow-down"></i></a
+            >
+        </div>
+    </div>
+    <img
+        src="https://thispersondoesnotexist.com/"
+        alt="profile-image"
+        class="round"
+    />
+</section>
+
+<style>
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section {
+        padding: 1rem 5rem;
+        display: flex;
+        flex-direction: row;
+    }
+    img {
+        width: 100%;
+        min-width: 200px;
+        max-width: 300px;
+        float: right;
+        position: relative;
+        margin-left: 1rem;
+        top: 0;
+    }
+    .links {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .links a:hover {
+        color: #363636;
+
+    }
+    .links a {
+        text-decoration: none;
+        color: rgb(112, 112, 112);
+    }
+    .round {
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    @media (max-width: 940px) {
+        section {
+            flex-direction: column-reverse;
+        }
+    }
+</style>

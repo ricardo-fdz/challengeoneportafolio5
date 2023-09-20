@@ -1,0 +1,52 @@
+<section>
+    <img src="/contact_us.svg" />
+    <form action="">
+        <h2>Contacto</h2>
+        <p>
+            ¿Quieres contactarme? Complete el siguiente formulario y me pondré
+            en contacto con usted lo antes posible.
+        </p>
+        <div class="mb-3">
+            <label class="form-label">Nombre completo</label>
+            <input class="form-control" type="text" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Correo electronico</label>
+            <input
+                type="email"
+                class="form-control"
+                placeholder="name@example.com"
+            />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Asunto</label>
+            <input type="text" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+
+<style>
+    section {
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        background-color: #eaf2fd;
+        gap: 20px;
+    }
+    img{
+      padding: 20px;
+      width: 30%;
+      background-color:lightsteelblue;
+      border-radius: 20px;
+    }
+    @media (max-width: 550px) {
+      img{
+        display: none;
+      }
+    }
+</style>

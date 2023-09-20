@@ -1,0 +1,26 @@
+---
+const  { icon, label } = Astro.props;
+---
+<div class="card">
+  <div class="card-body">
+    <i class:list={[...icon.split(" ")]}></i>
+    <span>{label}</span>
+  </div>
+</div>
+
+<style>
+  .card{
+    min-height: 150px;
+    border-radius: 5px;
+    min-width: 150px
+  }
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  i{
+    font-size: x-large;
+    color: #3782e6;
+  }
+</style>

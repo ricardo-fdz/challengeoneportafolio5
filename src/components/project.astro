@@ -1,0 +1,52 @@
+<div class="project">
+    <img src="/decoder.png" alt="" />
+    <div class="desc">
+        <h5>Encriptador de texto</h5>
+        <p>Challenge Alura Codificador</p>
+        <div class="d-flex flex-row gap-2">
+            <a
+                href="https://github.com/ricardo-fdz/challenge-oracle-decoder"
+                class="btn btn-outline-primary"
+                target="_blank"
+            >
+                Repocitorio</a
+            >
+            <a
+                href="https://ricardo-fdz.github.io/challenge-oracle-decoder/"
+                class="btn btn-primary"
+                target="_blank"
+            >
+                Ver demo</a
+            >
+        </div>
+    </div>
+</div>
+
+<style>
+    img {
+        width: 60%;
+        box-shadow: 5px 5px 10px 5px darkgray;
+    }
+    .project {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .project:nth-of-type(2n){
+      flex-direction: row-reverse;
+    }
+    @media (max-width: 550px) {
+      .project {
+        flex-direction: column;
+      }
+      .project:nth-of-type(2n){
+        flex-direction: column;
+      }
+      img {
+        width: 100%;
+      }
+    }
+</style>
